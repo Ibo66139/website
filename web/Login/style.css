@@ -21,6 +21,7 @@ ul{
 }
 
 main{
+    transition: 3ms ease;
 height: 100vh;
 width: 100vw;
 display: flex;
@@ -38,21 +39,20 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   margin: 5px 5px 5px 5px;
-   border-radius: 20px;
-        border: 2px solid rgba(255, 255, 255, 5);
+    margin: 5px 5px 5px 5px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 5);
 
 
-   /*
-    grid-column-start: ;
-    grid-column-end: ;
-    grid-row-start: ;
-    grid-row-end: ;
-
-    */
+   
+    grid-column-start: 1;
+    grid-column-end:1;
+  
+    transition: 3ms ease;
+    
 }
 
-.Login-con input{
+input{
     height: 40px;
     width: 300px;
     margin: 20px;
@@ -67,21 +67,27 @@ input::placeholder {
     text-align: left;
   }
   
-
+  .Login-con, .reg-con {
+    
+    transition: order 0.5s ease-in-out;
+  }
+  
 .reg-con{
 
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 5);
 
-
-
+    backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
    margin: 5px 5px 5px 5px;
 
-
-
- 
+   grid-column-start:2;
+   grid-column-end: 2;
+  
+   transition: 300ms;
 }
 
 
@@ -123,9 +129,9 @@ footer{
         height: 500px;
         width: 500px;
         overflow: hidden;
-
+        transition: 3ms ease;
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 500px 500px ;
         grid-template-rows:  500px ;
 
           /*
@@ -159,6 +165,31 @@ footer{
 
     }
 
+    #zeigPasswordButton{
+
+        background: transparent;
+        border: transparent;
+        color: blue;
+        width: 80px;
+        height: 20px;
+        margin: 0;
+
+
+    }
+
+    .link{
+
+        color: #ad6ea5;
+        cursor: pointer;
+        
+
+    }
   
+    p{
+
+
+
+        margin: 0;
+    }
 
   
