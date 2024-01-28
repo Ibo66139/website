@@ -4,7 +4,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 100vw;
 
 
 }
@@ -21,8 +21,8 @@ ul{
 }
 
 main{
-height: 450px;
-width: 500px;
+height: 100vh;
+width: 100vw;
 display: flex;
   align-items: center;
   justify-content: center;
@@ -33,22 +33,55 @@ overflow: hidden;
 
 .Login-con{
     
-    height: 450px;
-    width: 100%;
+    backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5px 5px 5px 5px;
-    
+   margin: 5px 5px 5px 5px;
+   border-radius: 20px;
+        border: 2px solid rgba(255, 255, 255, 5);
+
+
+   /*
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: ;
+    grid-row-end: ;
+
+    */
 }
 
 .Login-con input{
+    height: 40px;
+    width: 300px;
+    margin: 20px;
+    background: transparent;
+    border: transparent;
+    border-bottom: solid 3px #ad6ea5;
+    
 
-    width: 100%;
+}
+
+input::placeholder {
+    text-align: left;
+  }
+  
+
+.reg-con{
 
 
 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   margin: 5px 5px 5px 5px;
+
+
+
+ 
 }
 
 
@@ -68,21 +101,64 @@ footer{
         flex-direction: column;
         margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-image: url(/testcode/img/kununu-arbeitgeber-profil.webp);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
     }
 
     h3{
 
 
         font-size: 55px;
-
-
+        padding: 2px;
+        margin: 3px;
 
 
 
 
     }
+    
+
+    .flex-box{
+        height: 500px;
+        width: 500px;
+        overflow: hidden;
+
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows:  500px ;
+
+          /*
+
+        column-gap: 5px;
+        row-gap: 5px;         
+
+        */
+
+
+    }
+
+
+    button{
+
+        background-color: #ad6ea5;
+        border: transparent;
+        border-radius: 22px   ;
+        margin: 20px;
+        width: 160px;
+        height: 30px;
+        cursor: pointer;
+
+
+    }
+
+    button:hover{
+
+        background-color: rgba(255, 0, 170, 0.1);
+
+
+    }
+
+  
 
   
