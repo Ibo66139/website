@@ -21,7 +21,7 @@ ul{
 }
 
 main{
-    transition: 3ms ease;
+    transition: left 0.5s ease-in-out;
 height: 100vh;
 width: 100vw;
 display: flex;
@@ -33,22 +33,26 @@ overflow: hidden;
 
 
 .Login-con{
-    
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 500px;
+    height: 500px;
     backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px 5px 5px 5px;
+    
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 5);
 
-
+    transition: left 0.5s ease-in-out;
    
     grid-column-start: 1;
     grid-column-end:1;
   
-    transition: 3ms ease;
+    
     
 }
 
@@ -59,35 +63,57 @@ input{
     background: transparent;
     border: transparent;
     border-bottom: solid 3px #ad6ea5;
-    
 
-}
+    
+    box-shadow: none; 
+    
+  }
+
+
 
 input::placeholder {
     text-align: left;
   }
+
+
+
+
+
+  input:focus {
+    border-color: green; 
+    
+  }
   
+
+  input:hover {
+    background-color: wheat; /* Hintergrundfarbe beim Hover */
+  }
+
+ 
   .Login-con, .reg-con {
     
-    transition: order 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
   }
   
 .reg-con{
-
+    position: relative;
+    top: -100%;
+    left: 100%;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 5);
-
+    width: 500px;
+    height: 500px;
     backdrop-filter: blur(15px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   margin: 5px 5px 5px 5px;
+   
 
    grid-column-start:2;
    grid-column-end: 2;
-  
-   transition: 300ms;
+   transition: left 0.5s ease-in-out;
+   
 }
 
 
@@ -129,9 +155,12 @@ footer{
         height: 500px;
         width: 500px;
         overflow: hidden;
-        transition: 3ms ease;
-        display: grid;
-        grid-template-columns: 500px 500px ;
+        transition: left 0.5s ease-in-out;
+        
+
+       
+
+       /* grid-template-columns: 500px 500px ;
         grid-template-rows:  500px ;
 
           /*
@@ -150,11 +179,11 @@ footer{
         background-color: #ad6ea5;
         border: transparent;
         border-radius: 22px   ;
-        margin: 20px;
+        margin: 15px;
         width: 160px;
         height: 30px;
         cursor: pointer;
-
+        
 
     }
 
@@ -166,7 +195,8 @@ footer{
     }
 
     #zeigPasswordButton{
-
+        position: relative;
+       left: -25%;
         background: transparent;
         border: transparent;
         color: blue;
@@ -192,4 +222,4 @@ footer{
         margin: 0;
     }
 
-  
+    
