@@ -133,7 +133,7 @@ footer{
         flex-direction: column;
         margin: 0;
         padding: 0;
-        background-image: url(/testcode/img/kununu-arbeitgeber-profil.webp);
+        background-image: url(/Portfolio/image/background.webp);
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: left;
     }

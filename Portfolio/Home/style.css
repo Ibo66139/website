@@ -1,0 +1,56 @@
+body{
+    background-image: url(/Portfolio/image/background.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    transition:  0.5s ease-in-out;}
+
+.Projekte-Con,
+.Person-Con{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+
+    margin: 10px;
+    width: 30vw;
+    height:70vh;
+
+    display: flex;
+    justify-content: center;
+
+    transition:  0.5s ease-in-out;
+}
+
+h2{
+    position: relative;
+    top: -70px;
+    font-size: 35px;
+    
+}
+
+.Person-Con{
+    background-image:none ;
+
+}
+
+.Projekte-Con{
+    background-image: url(/Portfolio/image/project-management-2061635_640.jpg) ;
+
+    background-size: cover;  /* Bild wird skaliert, um den gesamten Bereich zu füllen */
+    background-repeat: no-repeat;  /* Verhindert, dass das Bild wiederholt wird */
+    background-position: center;  /* Zentriert das Bild */
+}
+
+.Person-Con:hover,
+.Projekte-Con:hover{
+
+    width: 50vw;
+    height:75vh;
+    transition:  0.5s ease-in-out;
+
+}
+
+
+
