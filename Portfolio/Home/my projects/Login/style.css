@@ -129,6 +129,8 @@ footer{
 
 
     body{
+      background-size: cover; /* Bild deckt den gesamten Bereich ab */
+      background-position: center; /* Bild wird zentriert */
 
         flex-direction: column;
         margin: 0;
